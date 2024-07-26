@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@font-face {
+    font-family: "Geist Sans";
+    src: url("https://assets.codepen.io/605876/GeistVF.ttf") format("truetype");
+  }
+
+@media (max-width: 767px) {
+    .intro {
+        top: 14vh;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    
+        font-size:3vw;
+        font-weight: 550;
+    }
+    
+    .type {
+        top: 16vh;
+        position: absolute;
+        text-align: center;
+    
+        width: 100%;
+        height: 100vw;
+    }
+
+    li a {
+        font-size: smaller;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .intro {
+        top: 19vh;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    
+        font-size:3vw;
+        font-weight: 550;
+    }
+    
+    .type {
+        top: 22vh;
+        position: absolute;
+        text-align: center;
+    
+        width: 100%;
+        height: 100vw;
+    }
+}
+
+@media (max-width: 1439px) and (min-width: 1024px) {
+    .intro {
+        top: 18vh;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    
+        font-size:3vw;
+        font-weight: 550;
+    }
+    
+    .type {
+        top: 22vh;
+        position: absolute;
+        text-align: center;
+    
+        width: 100%;
+        height: 100vw;
+    }
+}
+
+@media (max-width: 2559px) and (min-width: 1440px) {
+    .intro {
+        top: 42vh;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    
+        font-size:3vw;
+        font-weight: 550;
+    }
+    
+    .type {
+        top: 50vh;
+        position: absolute;
+        text-align: center;
+    
+        width: 100%;
+        height: 100vw;
+    }
+}
+
+@media (min-width: 2559px) {
+    .intro {
+        top: 42vh;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    
+        font-size:3vw;
+        font-weight: 550;
+    }
+    
+    .type {
+        top: 50vh;
+        position: absolute;
+        text-align: center;
+    
+        width: 100%;
+        height: 100vw;
+    }
+
+    li a {
+        font-size: 1.8vw;
+    }
+}
+
+:root {
+    --bg: hsl(0 0% 2%);
+    --color: hsl(0 0% 100% / 0.1);
+    --underline-width: 1lh;
+    --underline-block-width: 200vmax;
+    --underline-color: hsl(0 0% 50% / 0.15);
+    --underline-color-hover: hsl(180 100% 50% / 1);
+    --underline-transition: 5s;
+    --finish-fill: hsl(0 0% 100%);
+    --accent: hsl(0 0% 100%);
+    --fill: hsl(0 0% 50%);
+}
+
+body {
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    color: rgb(255, 241, 221);
+    /* overflow: hidden; */
+    /* background-color: #242424; */
+    background-color: #030102;
+}
+
+.container {
+    width: 100%;
+}
+
+/* header and navigation bar styling */
+
+.nav {
+    z-index: 999;
+    width: 100vw;
+    position: sticky;
+    position: -webkit-sticky;
+    height: 100%;
+    top: 0;
+    background-color: #242424;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+      
+li:last-child {
+    float: right;
+    border-right: none;
+    border-left: 1px solid #bbb;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #111;
+}
+
+li a:active {
+    background-color: #653255
+}
+
+.header {
+    height: 100%;
+    width: 100%;
+}
+
+.homeimage {
+    height: auto;
+    width: 100%;
+    border: solid;
+}
+
+.intro {
+    font-size:4vw;
+    font-weight: 500;
+}
+
+h1{
+    font-size:2vw;
+    font-weight: 450;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* about me section styling */
+
+.aboutbody {
+    background-image: linear-gradient(#030102, #242424);
+    padding-bottom: 10vh;
+    width: 100vw;
+
+}
+
+.aboutme {
+    height: fit-content;
+    /* border: solid; */
+    width: 62vw;
+    margin: 0 auto;    
+}
+
+/* education styling */
+
+.education {
+    background-color: #242424;
+    height: 100%;
+    width: 100vw;
+}
+
+/* .expcontainer {
+    background-color: #242424;
+    height: auto;
+    justify-items: center;
+    margin: 0 auto;
+
+    margin-bottom: 20vh;
+    padding: 20vh;
+    padding-top: 10vh;
+} */
+
+.umd {
+    background-color: #383737;
+    height: fit-content;
+    width: 80vw;
+    border: solid;
+    display: inline-block;
+    margin-bottom: 3vw;
+}
+
+#edu {
+    margin-top: 0;
+    padding-top: 10vw;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 400;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.educontainer {
+    height: auto;
+
+    padding: 20vh;
+    padding-bottom: 0;
+    padding-top: 10vh;
+}
+
+/* experiences styling */
+
+.experiences {
+    background-color: #242424;
+    height: auto;
+    width: 100vw;
+}
+
+.expcontainer {
+    background-color: #242424;
+    height: auto;
+
+    padding: 20vh;
+    padding-bottom: 0;
+    padding-top: 10vh;
+}
+
+.expcontainer div {
+    height: fit-content;
+    width: 80vw;
+    border: solid;
+    margin: 0;
+    display: inline-block;
+    margin-bottom: 3vw;
+}
+
+#experience {
+    margin-top: 0;
+    padding-top: 10vw;
+    text-align: center;
+    font-size: 3vw;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#headstarter {
+    background-color: #383737;
+    height: fit-content;
+    width: 80vw;
+    border: solid;
+    display: inline-block;
+    margin-bottom: 3vw;
+}
+
+#gmu {
+    background-color: #383737;
+    height: fit-content;
+    width: 80vw;
+    border: solid;
+    display: inline-block;
+    margin-bottom: 3vw;
+}
+
+
+/* projects styling */
+
+.projectsbody {
+    background-color: #242424;
+    height: 100%;
+    width: 100vw;
+}
+
+.flexcontainer {
+    background-color: #242424;
+    height: auto;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    gap: 4px;
+    justify-items: center;
+    margin: 0 auto;
+    padding: 20vh;
+    padding-top: 10vh;
+}
+
+.flexcontainer div {
+    height: 35vh;
+    width: 20vw;
+    border: solid;
+    margin: 0;
+    text-align: center;
+}
+
+#project {
+    margin-top: 0;
+    padding-top: 10vw;
+    text-align: center;
+    font-size: 3vw;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+hr {
+    margin-top: 2vw;
+    width: 70vw;
+    height: 1px;
+    color: white;
+    background-color: white;
+}
+
+/* footer styling */
+
+.footer {
+    background-color: #242424;
+    text-align: center;
+}
+
+section {
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+.scroll {
+    width: 59vw;
+    font-size: 2vw;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+
+    -webkit-animation-name: appear;
+    -webkit-animation-timing-function: linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+/* .personals {
+
+} */
+
+@-webkit-keyframes appear {
+    from {
+        -webkit-opacity: 0;
+        scale: 0.5;
+    } 
+    to {
+        -webkit-opacity: 1;
+        scale: 1;
+    }
+}
+
+/* @-webkit-keyframes stagger {
+    from {
+        -webkit-opacity: 0;
+        scale: 0.5;
+    } 
+    to {
+        -webkit-opacity: 1;
+        scale: 1;
+    }
+} */
+
+
+/* p {
+    resize: both;
+    max-width: 70vw;
+    overflow: hidden;
+    padding: 10ch;
+      margin: 0;
+  }
+  
+  p > span {
+      outline-color: hsl(10 80% 50%);
+      outline-offset: 1ch;
+      font-size: clamp(3rem, 4vw + 1rem, 10rem);
+    color: var(--color);
+    text-decoration: none;
+    background-image:
+          First one is the highlight
+          linear-gradient(90deg, transparent calc(100% - 8ch), var(--accent) calc(100%  - 8ch)),
+        linear-gradient(90deg, var(--fill), var(--fill)),
+      linear-gradient(90deg, var(--underline-color), var(--underline-color));
+    background-size:
+        var(--underline-block-width) var(--underline-width),
+        var(--underline-block-width) var(--underline-width),
+      100% var(--underline-width);
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: 100%;
+    background-clip: text;
+    color: var(--finish-fill);
+  }
+
+  section {
+    position: sticky;
+    top: 0;
+      height: 100vh;
+      width: 100vw;
+    display: grid;
+    place-items: center;
+  }
+  
+  
+  @supports (animation-timeline: scroll()) {
+    @media (prefers-reduced-motion: no-preference) {
+      .aboutme {
+        view-timeline-name: --section;
+      }
+      
+      p > span {
+        background-position-x:
+          calc(var(--underline-block-width) * -1),
+          calc(var(--underline-block-width) * -1),
+          0;
+        color: transparent;
+        animation-name: fill-up, color-in;
+        animation-fill-mode: both;
+        animation-timing-function: linear;
+          animation-timeline: --section;
+          animation-duration: entry 100% cover 50%, cover 50% exit 0%;
+          animation-range: entry 100% cover 50%, cover 50% exit 0%;
+      }
+  
+      @keyframes fill-up {
+          to { background-position-x: 0, 0, 0; }
+      }
+  
+      @keyframes color-in {
+          to { color: var(--finish-fill); }
+      }
+    }
+  } */
