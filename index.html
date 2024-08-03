@@ -54,7 +54,7 @@
             </div>
         </div>
 
-        <div class="education">
+        <!-- <div class="education">
             <h1 id="edu">Education</h1>
             <hr>
             <div class="educontainer">
@@ -66,6 +66,29 @@
                         <p style = "font-family:Georgia, 'Times New Roman', Times, serif;">Relevant Coursework: Object Oriented Programming I, Object Oriented Programming II, Calculus III</p>
                 </div>
             </div>
+        </div> -->
+
+        <div class="education">
+            <h1 id="edu">Education</h1>
+            <hr>
+            <div class="educontainer">
+                <div class="umd">
+                    <div class = "image">
+                        <img src="umd_logo_transparent.png" alt="Pranav Raghavan">
+                    </div>
+
+                    <div>
+                        <h1 style = "font-family:Georgia, 'Times New Roman', Times, serif;">University of Maryland, College Park</h1>
+                        <p> <strong style = "font-weight: 600; font-style: italic;">B.S. in Computer Science (Machine Learning), Minor in Mathematics </strong>
+                        | August 2023 - May 2026 (Expected)</p>
+                        <p style = "font-family:Georgia, 'Times New Roman', Times, serif;">Relevant Coursework: Object Oriented Programming I, Object Oriented Programming II, Calculus III</p>
+                    </div>
+                    <!-- <h1 style = "font-family:Georgia, 'Times New Roman', Times, serif;">University of Maryland, College Park</h1>
+                    <p> <strong style = "font-weight: 600; font-style: italic;">B.S. in Computer Science (Machine Learning), Minor in Mathematics </strong>
+                        | August 2023 - May 2026 (Expected)</p>
+                        <p style = "font-family:Georgia, 'Times New Roman', Times, serif;">Relevant Coursework: Object Oriented Programming I, Object Oriented Programming II, Calculus III</p> -->
+                </div>
+            </div>
         </div>
 
         <div class="experiences">
@@ -73,28 +96,52 @@
             <hr>
             <div class="expcontainer">
                 <div class="experiences" id = "headstarter">
-                    <img style="float:left; height: 100%; width: auto" src="headstarter_logo_transparent.png" alt="Pranav Raghavan">
-                    <h1 style = "font-family:Georgia, 'Times New Roman', Times, serif;">Headstarter AI</h1>
-                    <p> <strong style = "font-weight: 600; font-style: italic;">Software Engineering Fellow </strong>
+                    <div class="image">
+                        <img src="headstarter_logo_transparent.png" alt="Pranav Raghavan">
+                    </div>
+
+                    <div>
+                        <h1 style = "font-family:Georgia, 'Times New Roman', Times, serif;">Headstarter AI</h1>
+                        <p> <strong style = "font-weight: 600; font-style: italic;">Software Engineering Fellow </strong>
                         | July 2024 - Present</p>
-                    <!-- <p style = "font-family:Georgia, 'Times New Roman', Times, serif;">Relevant Coursework: Object Oriented Programming I, Object Oriented Programming II, Calculus III</p> -->
+                    </div>
                 </div>
 
                 <div class="experiences" id = "gmu">
-                    <div style = "display: inline; width: 225px; height: 100vh; margin:0; border: 0">
-                        <img style="float:left; height:auto; width: 225px" src="gmu_logo_new-transparent.png" alt="Pranav Raghavan">
+                    <div class="image">
+                        <img src="gmugmu-removebg-preview.png" alt="Pranav Raghavan">
                     </div>
-                    <h1 style = "font-family:Georgia, 'Times New Roman', Times, serif;">George Mason University</h1>
-                    <p> <strong style = "font-weight: 600; font-style: italic;">ML Student Researcher </strong>
-                        | August 2022 - March 2023</p>
-                    <p>
-                        <!-- <li>"hi"</li> -->
-                        • Utilized binary visualization to process sample files obtained from URLhaus into data depictions using Ghidra Deassembler<br>
-                        • Pre-trained a YOLO v6 algorithm offered by Roboflow to flag files as potentially malicious using a 70:30 train-test split<br>
-                        • 92.2% accuracy when detecting malware in samples files spanning across 7 malware types and 3 benign types
-                    </p>
+
+                    <div>
+                        <h1 style = "font-family:Georgia, 'Times New Roman', Times, serif;">George Mason University</h1>
+                        <p> <strong style = "font-weight: 600; font-style: italic;">ML Student Researcher </strong>
+                            | August 2022 - March 2023</p>
+                        <p>
+                            <!-- <li>"hi"</li> -->
+                            • Utilized binary visualization to process sample files obtained from URLhaus into data depictions using Ghidra Deassembler<br>
+                            • Pre-trained a YOLO v6 algorithm offered by Roboflow to flag files as potentially malicious using a 70:30 train-test split<br>
+                            • 92.2% accuracy when detecting malware in samples files spanning across 7 malware types and 3 benign types
+                        </p>
+                    </div>
                 </div>
-                <!-- <div class="experiences" id = "hex">hi</div> -->
+
+                <div class="experiences" id = "hex">
+                    <div class="image">
+                        <img src="hex_logo.png" alt="Pranav Raghavan">
+                    </div>
+
+                    <div>
+                        <h1 style = "font-family:Georgia, 'Times New Roman', Times, serif;">Hexaware Technologies</h1>
+                        <p> <strong style = "font-weight: 600; font-style: italic;">Software Engineering Intern </strong>
+                            | July 2022 - August 2022</p>
+                        <p>
+                            <!-- <li>"hi"</li> -->
+                            • Established projects and case studies with technical programming on Pyspark, and Machine Learning services on AWS<br>
+                            • Organized process streaming and batch data processing using cloud native services such as Lambda, Kinesis, EMR, etc<br>
+                            • Constructed a pipeline collecting real-time data from web traffic; navigated data analysis, data engineering, and processing<br>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -102,9 +149,23 @@
             <h1 id="project">Some of my Works</h1>
             <hr>
             <div class="flexcontainer">
-                <div class="personals" id = "musify"><strong>Musify.ai: </strong>Currently working on a Full Stack Application that has an AI integrated feature to build playlists based on music/artist preferences.</div>
-                <div class="personals" id = "shuttle"><strong>Shuttle-UM: </strong>Currently working on an IOS app using SwiftUI to serve as UMD's navigation app, specifically for the campus shuttle system, showing real-time shuttle updates.</div>
-                <div class="personals" id = "tokenpong"><strong>Token Pong </strong>Built a 2-player variation of Pong played through a GUI, which is implemented using the Java Graphics Library and showcases MVC system.</div>
+                <div class="personals" id = "musify">
+                    <span>
+                        <strong>Musify.ai: </strong>Currently working on a Full Stack Application that has an AI integrated feature to build playlists based on music/artist preferences.
+                    </span>
+                </div>
+
+                <div class="personals" id = "shuttle">
+                    <span>
+                        <strong>Shuttle-UM: </strong>Currently working on an IOS app using SwiftUI to serve as UMD's navigation app, specifically for the campus shuttle system, showing real-time shuttle updates.
+                    </span>
+                </div>
+
+                <div class="personals" id = "tokenpong">
+                    <span>
+                        <strong>Token Pong </strong>Built a 2-player variation of Pong played through a GUI, which is implemented using the Java Graphics Library and showcases MVC system.
+                    </span>
+                </div>
             </div>
         </div>
     

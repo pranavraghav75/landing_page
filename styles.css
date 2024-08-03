@@ -131,13 +131,28 @@
     --fill: hsl(0 0% 50%);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 0.67em;
+    /* margin-bottom: 0.67em; */
+}
+
+p {
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
 body {
     font-family: Rubik, sans-serif;
     font-weight: 400;
     color: rgb(255, 241, 221);
     /* overflow: hidden; */
     /* background-color: #242424; */
-    background-color: #030102;
+    background-color: #242424;
 }
 
 .container {
@@ -199,7 +214,6 @@ li a:active {
 .homeimage {
     height: auto;
     width: 100%;
-    border: solid;
 }
 
 .intro {
@@ -219,7 +233,7 @@ h1{
     background-image: linear-gradient(#030102, #242424);
     padding-bottom: 10vh;
     width: 100vw;
-
+    margin: 0;
 }
 
 .aboutme {
@@ -227,6 +241,18 @@ h1{
     /* border: solid; */
     width: 62vw;
     margin: 0 auto;    
+}
+
+.image {
+    width: 225px;
+    height: auto;
+    align-content: center;
+}
+
+.image img {
+    width: 75%;
+    height: auto;
+    margin-left: 12.5%
 }
 
 /* education styling */
@@ -251,9 +277,36 @@ h1{
 .umd {
     background-color: #383737;
     height: fit-content;
-    width: 80vw;
+    width: 100%;
     border: solid;
-    display: inline-block;
+    display: flex;
+    margin-bottom: 3vw;
+}
+
+#headstarter {
+    background-color: #383737;
+    height: fit-content;
+    width: 100%;
+    border: solid;
+    display: flex;
+    margin-bottom: 3vw;
+}
+
+#gmu {
+    background-color: #383737;
+    height: fit-content;
+    width: 100%;
+    border: solid;
+    display: flex;
+    margin-bottom: 3vw;
+}
+
+#hex {
+    background-color: #383737;
+    height: fit-content;
+    width: 100%;
+    border: solid;
+    display: flex;
     margin-bottom: 3vw;
 }
 
@@ -272,15 +325,17 @@ h1{
     padding: 20vh;
     padding-bottom: 0;
     padding-top: 10vh;
+
+    display: flex;
 }
 
 /* experiences styling */
 
-.experiences {
+/* .experiences {
     background-color: #242424;
     height: auto;
     width: 100vw;
-}
+} */
 
 .expcontainer {
     background-color: #242424;
@@ -291,14 +346,14 @@ h1{
     padding-top: 10vh;
 }
 
-.expcontainer div {
+/* .expcontainer div {
     height: fit-content;
     width: 80vw;
     border: solid;
     margin: 0;
     display: inline-block;
     margin-bottom: 3vw;
-}
+} */
 
 #experience {
     margin-top: 0;
@@ -310,23 +365,23 @@ h1{
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-#headstarter {
+/* #headstarter {
     background-color: #383737;
     height: fit-content;
     width: 80vw;
     border: solid;
     display: inline-block;
     margin-bottom: 3vw;
-}
+} */
 
-#gmu {
+/* #gmu {
     background-color: #383737;
     height: fit-content;
     width: 80vw;
     border: solid;
     display: inline-block;
     margin-bottom: 3vw;
-}
+} */
 
 
 /* projects styling */
@@ -354,9 +409,15 @@ h1{
     height: 35vh;
     width: 20vw;
     border: solid;
-    margin: 0;
+    display: flex;
+    align-items: center;
     text-align: center;
 }
+
+/* .personals span{
+    display: table-cell;
+    vertical-align: middle;
+} */
 
 #project {
     margin-top: 0;
@@ -370,10 +431,11 @@ h1{
 
 hr {
     margin-top: 2vw;
-    width: 70vw;
+    width: 75%;
     height: 1px;
     color: white;
     background-color: white;
+    margin-left: 12.5%;
 }
 
 /* footer styling */
